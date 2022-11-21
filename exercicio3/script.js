@@ -1,0 +1,12 @@
+const form = document.getElementById("form")
+const username = document.getElementById("username")
+const endereço = document.getElementById("endereço")
+const CPF = document.getElementById("CPF")
+const Escolaridade = document.getElementById("Escolaridade")
+const CNH = document.getElementById("CNH")
+const PossuiFilhos = document.getElementById("PossuiFilhos")
+const CargoAtual = document.getElementById("CargoAtual")
+const Salario = document.getElementById("Salario")
+const AnoDeAdmissao = document.getElementById("AnoDeAdmissao")
+let Btn = document.getElementById("btn")
+
