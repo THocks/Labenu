@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+
+</header>
+
+ <div class="container">
+
+
+    <div class="header"></div>
+    <h2>Formulário de Pesquisa </h2>
+
+
+
+<form id ="form" classe="form">
+    <div class="form-control">
+        <label for="nome">Nome Completo</label>
+        <input 
+        type="text"
+        id="username"
+        placeholder="Digite seu nome completo"
+        />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+    </div>
+    
+        <div class="form-control">
+            <label for="Datadenascimento">DataDeNascimento</label>
+            <input 
+            type="number"
+            id="DataDeNascimento"
+            placeholder="Digite sua data de nascimento"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+        </div>
+   
+            <div class="form-control">
+                <label for="endereço">endereço</label>
+                <input 
+                type="text"
+                id="endereço"
+                placeholder="Qual seu endereço ?"
+                required/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+            </div>
+
+           
+                <div class="form-control">
+                    <label for="CPF">CPF</label>
+                    <input 
+                    type="number"
+                    id="CPF"
+                    placeholder="CPF"
+                    required/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                </div>
+
+               
+                    <div class="form-control">
+                        <label for="Escolaridade">Escolaridade</label>
+                        <input 
+                        type="text"
+                        id="Escolaridade"
+                        placeholder="Digite sua data de nascimento"
+                        required/>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    
+                        <div class="form-control">
+                            <label for="Datadenascimento">CNH</label>
+                            <input 
+                            type="text"
+                            id="CNH"
+                            placeholder="Digite sua CNH"
+                            required/>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+
+                        
+                            <div class="form-control">
+                                <label for="PossuiFilhos">Possui Filhos</label>
+                                <input 
+                                type="text"
+                                id="PossuiFilhos"
+                                placeholder="Possui Filhos ?"
+                               required />
+                                <i class="fas fa-exclamation-circle"></i>
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        
+                                <div class="form-control">
+                                    <label for="Cargo Atual">Cargo Atual</label>
+                                    <input 
+                                    type="text"
+                                    id="CargoAtual"
+                                    placeholder="Digite seu Cargo Atual"
+                                    required/>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+    
+                                    <div class="form-control">
+                                        <label for="Salario">Salario</label>
+                                        <input 
+                                        type="number"
+                                        id="Salario"
+                                        placeholder="Qual seu salario ?"
+                                        required/>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+
+                                        <div class="form-control">
+                                            <label for="AnoDeAdmissao">Ano de Admissão</label>
+                                            <input 
+                                            type="text"
+                                            id="AnoDeAdmissao"
+                                            placeholder="Data de entrada"
+                                            required/>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <button type="submit" id="btn" onclick="verificar()" value="Exibir Alert">Enviar Dados</button>
+
+        
+</form> <!-- Final da div-->
+ </div>
