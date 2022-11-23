@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 3</title>
+  </head>
+  <body>
+    <h1>Exercicio 3</h1>
+
+    Digite Número
+    <br />
+    <br />
+    <input id="n1" type="number" />
+    <br />
+    <br />
+    Digite Número
+    <br /><br />
+    <input id="n2" type="number" />
+    <br /><br />
+
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="dividir()">/</button>
+    <button onclick="multiplicar()">*</button>
+
+    <br />
+    <br />
+    Resultado:
+    <p id="res"></p>
+
+    <script>
+      let txt1 = document.getElementById("n1");
+      let txt2 = document.getElementById("n2");
+      let res = document.getElementById("res");
+
+      function somar() {
+        res.innerHTML = Number(txt1.value) + Number(txt2.value);
+      }
+
+      function subtrair() {
+        res.innerHTML = Number(txt1.value) - Number(txt2.value);
+      }
+
+      function dividir() {
+        res.innerHTML = Number(txt1.value) / Number(txt2.value);
+      }
+
+      function multiplicar() {
+        res.innerHTML = Number(txt1.value) * Number(txt2.value);
+      }
+    </script>
+  </body>
+</html>
