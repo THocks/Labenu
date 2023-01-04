@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+section:last-child {
+  grid-column: 3;
+}
+
+div {
+  display: grid;
+}
+
+footer {
+  border: 1px solid black;
+  display: grid;
+  align-items: center;
+  padding: 30px;
+  margin-top: 400px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 6fr 3fr;
+  margin-top: 2%;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(auto-fit, 150px);
+  text-align: center;
+  gap: 40px;
+  
+}
