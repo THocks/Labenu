@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 25rem;
+  height: 31.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  padding: 0.938rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(87, 224, 227, 1) 0%,
+    rgba(252, 5, 22, 1) 100%
+  );
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #070707;
+  box-shadow: 0px 0px 0px 5px #f36818;
+}
+
+.pokemon-name {
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.pokemon-name span {
+  position: relative;
+  font-weight: 700;
+  font-size: 2em;
+  opacity: 0;
+  animation: 500ms ease-in-out 500ms fromTop forwards;
+}
+/* Animation > TITLE */
+@keyframes fromTop {
+  from {
+    top: -30px;
+  }
+
+  to {
+    opacity: 1;
+    top: 10px;
+  }
+}
+
+.bloc-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemon-stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pokemon-img img {
+  position: relative;
+  opacity: 0;
+  width: 11.25rem;
+  animation: 500ms ease-in-out 700ms fromLeft forwards;
+}
+
+@keyframes fromLeft {
+  from {
+    left: -30px;
+  }
+
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+/* button */
+
+.pokemon-type button {
+  position: relative;
+  background-color: #e75b0a;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 7.5rem;
+  font-size: 14px;
+  color: #f7f7f2;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0;
+  box-shadow: 1px 1px 1px rgb(252, 251, 251);
+  outline: none;
+  animation: 500ms ease-in-out 800ms fromRight forwards;
+}
+.pokemon-type button:hover {
+  transform: scale(1.1);
+}
+/* Animation button > fazer chegar na tela da rigth * | chegar span P*/
+@keyframes fromRight {
+  from {
+    right: -100px;
+  }
+
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+.progress {
+  background-color: #f74646;
+  border-radius: 16px;
+  width: 90% !important;
+  margin: auto;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 2px 1px black;
+}
+
+.progress span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  z-index: 2; /* Sobresair camada span */
+}
+
+/* Proguess Bar elementos */
+.progressbar {
+  display: table;
+  clear: both;
+  height: 24px;
+  padding: 0.01em 16px;
+  border-radius: 16px;
+  opacity: 0;
+}
+/* Valor | VIDA | ATTAQUE | DEFESA */
+@keyframes grow-1 {
+  from {
+    opacity: 0.5;
+    width: 0%;
+  }
+
+  to {
+    opacity: 1;
+    width: 90%;
+  }
+}
+
+@keyframes grow-2 {
+  from {
+    opacity: 0.5;
+    width: 0%;
+  }
+
+  to {
+    opacity: 1;
+    width: 75%;
+  }
+}
+
+@keyframes grow-3 {
+  from {
+    opacity: 0.5;
+    width: 0%;
+  }
+
+  to {
+    opacity: 1;
+    width: 65%;
+  }
+}
+/**************************************************/
+.bar-vid {
+  background-color: lightgreen;
+  animation: grow-1 1.2s ease-in-out 1s forwards;
+}
+
+.bar-att {
+  background-color: rgb(248, 117, 117);
+  animation: grow-2 1.2s ease-in-out 1.2s forwards;
+}
+
+.bar-def {
+  background-color: lightblue;
+  animation: grow-3 1.2s ease-in-out 1.4s forwards;
+}
+
+.pokemon-info {
+  padding: 0 10px;
+  text-align: center;
+}
+www
+/* P info charizard */
+.pokemon-info p {
+  font-weight: 200;
+  font-style: italic;
+  opacity: 0;
+  animation: 600ms ease-in-out 900ms fromRight forwards;
+}
